@@ -46,13 +46,13 @@ markup:
 
 params:
   logo:
-    url: "/images/logo1.webp"  # O seu logo horizontal
+    url: "images/logo.webp"  # O seu logo horizontal
     alt: "Dr. José Carlos Romeu - Reumatologista" # Vital para SEO
     text: "" # Deixe vazio se o nome já está na imagem
   description: "Dr. José Carlos Romeu - Médico Reumatologista. Especialista em saúde óssea e doenças reumáticas com consultórios em Lisboa, Setúbal e Quinta do Conde."
   keywords: "reumatologia, reumatologista lisboa, osteoporose, lúpus, saúde óssea, reumatologista setúbal, reumatologista quinta do conde, reumatologista azeitão, médico ossos, José Carlos Romeu"
-  images: ["/images/og-card.webp"]
-  favicon: "/images/fav1.webp"
+  images: ["images/og-card.webp"]
+  favicon: "images/fav1.webp"
 
   color:
     primaryColor: "#003366"           # Azul Marinho (Botões e Destaques)
@@ -76,7 +76,7 @@ params:
   navbar:
     align: ms-auto
     brandName: "Dr. José Carlos Romeu"
-    brandLogo: "/images/logo1.webp"
+    brandLogo: "images/logo.webp"
     disableSearch: true
     stickyNavBar:
       enable : true
@@ -96,7 +96,7 @@ params:
     title: "Dr. José Carlos Romeu"
     subtitle: "Médico Reumatologista"
     content: "Com mais de 40 anos de experiência clínica, dedicado à prevenção, diagnóstico e tratamento de doenças reumáticas e ósseas metabólicas."
-    image: "/images/jcr.webp"
+    image: "images/jcr.webp"
     roundImage: true 
     bottomImage:
       enable: false
@@ -113,7 +113,7 @@ params:
   about:
     enable: true
     title: "Sobre o Dr. José Carlos Romeu"
-    image: "/images/jcr.webp"
+    image: "images/jcr.webp"
     content: |-
       Médico Reumatologista com uma carreira de excelência dedicada ao diagnóstico e tratamento de patologias reumáticas e ósseas metabólicas.
 

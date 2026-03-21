@@ -1,0 +1,223 @@
+baseURL: "https://anromeu.github.io/site-dr-romeu/"
+canonifyURLs: true
+relativeURLs: true
+title: "Dr. José Carlos Romeu - Reumatologista"
+theme: "hugo-profile"
+services:
+  googleAnalytics:
+    id: "G-VK9K1L6CDF"
+
+
+# Multilingual configuration
+defaultContentLanguage: "PT-PT"
+defaultContentLanguageInSubdir: false
+
+languages:
+  PT-PT:
+    languageName: "Português"
+    weight: 1
+    contentDir: "content"
+    menu:
+      main:
+        - identifier: about
+          name: Sobre Mim
+          url: /#about
+          weight: 1
+        - identifier: rheuma
+          name: Saúde Reumática e Óssea
+          url: /#achievements
+          weight: 2
+        - identifier: contact
+          name: Consultórios
+          url: /#contact
+          weight: 3
+
+outputs:
+  home: [ "HTML", "RSS", "JSON" ]
+  page: [ "HTML", "RSS" ]
+
+enableRobotsTXT: true
+pagination:
+  pagerSize: 3
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  logo:
+    url: "/images/logo1.webp"  # O seu logo horizontal
+    alt: "Dr. José Carlos Romeu - Reumatologista" # Vital para SEO
+    text: "" # Deixe vazio se o nome já está na imagem
+  description: "Dr. José Carlos Romeu - Médico Reumatologista. Especialista em saúde óssea e doenças reumáticas com consultórios em Lisboa, Setúbal e Quinta do Conde."
+  keywords: "reumatologia, reumatologista lisboa, osteoporose, lúpus, saúde óssea, reumatologista setúbal, reumatologista quinta do conde, reumatologista azeitão, médico ossos, José Carlos Romeu"
+  images: ["/images/og-card.webp"]
+  favicon: "/images/fav1.webp"
+
+  color:
+    primaryColor: "#003366"           # Azul Marinho (Botões e Destaques)
+    secondaryColor: "#004b99"         # Azul intermédio (Hover)
+    textColor: "#333333"              # Cinzento escuro (Texto de leitura)
+    secondaryTextColor: "#003366"     # <--- MUDAMOS PARA AZUL MARINHO (para títulos e subtítulos)
+    backgroundColor: "#ffffff"        # Branco (Fundo do site)
+    secondaryBackgroundColor: "#f8f9fa" # Cinzento muito suave (Secções)
+
+
+  theme:
+    disableThemeToggle: true
+    defaultTheme: "light"
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    brandName: "Dr. José Carlos Romeu"
+    brandLogo: "/images/logo1.webp"
+    disableSearch: true
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: true
+      disableExperience: true
+      disableEducation: true
+      disableProjects: true
+      disableAchievements: true
+      disableContact: true
+
+  hero:
+    enable: true
+    intro: ""
+    title: "Dr. José Carlos Romeu"
+    subtitle: "Médico Reumatologista"
+    content: "Com mais de 40 anos de experiência clínica, dedicado à prevenção, diagnóstico e tratamento de doenças reumáticas e ósseas metabólicas."
+    image: "/images/jcr.webp"
+    roundImage: true 
+    bottomImage:
+      enable: false
+    button:
+      enable: true
+      name: "Marcar Consulta"
+      url: "#contact"
+      download: false
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons: []
+      customIcons: []
+
+  about:
+    enable: true
+    title: "Sobre o Dr. José Carlos Romeu"
+    image: "/images/jcr.webp"
+    content: |-
+      Médico Reumatologista com uma carreira de excelência dedicada ao diagnóstico e tratamento de patologias reumáticas e ósseas metabólicas.
+
+      **Percurso Profissional**
+      * **1980** Licenciatura em Medicina pela Faculdade de Medicina de Lisboa.
+      * **1990** Grau de Assistente Hospitalar de Reumatologia no Hospital de Santa Maria (HSM).
+      * **1991** Título de Especialista em Reumatologia pela Ordem dos Médicos.
+      * **1993 — 2024** Coordenador da Consulta de Doenças Ósseas Metabólicas da Unidade de Reumatologia do HSM.
+      * **2002** Grau de Assistente Hospitalar Graduado / Consultor de Reumatologia no HSM.
+      * **2010 — 2024** Coordenador da Unidade de Internamento do Serviço de Reumatologia e Doenças Ósseas Metabólicas do HSM.
+      * **2015 — 2024** Consultor dos Centros de Referência para a Área das Doenças Hereditárias do Metabolismo e Paramiloidose Familiar do HSM.
+      * **2016 — 2024** Cofundador e Coordenador da Unidade de Doenças Ósseas Metabólicas do Serviço de Reumatologia do HSM.
+      * **2020 - 2024** Fundador e Coordenador da Consulta de Ligação à Fratura (em parceria com a Ortopedia) do HSM.
+      * **2020 — 2024** Co-coordenador da FLS (Fracture Liaison Service) do HSM.
+      * **2022 — 2024** Membro da Equipa Multidisciplinar de Doenças Ósseas Raras do HSM, integrada na Rede Europeia de Referência (ERN-BOND).
+
+      <br>
+
+      **Funções Institucionais e Atividade Científica**
+      * Fundador e vice-presidente da Associação Portuguesa de Osteoporose (1994).
+      * Vice-Presidente da Sociedade Portuguesa de Reumatologia (2004-2012).
+      * Membro do Conselho Editorial da Acta Reumatológica Portuguesa (2004-2021).
+      * Editor de revisão da Revista Frontiers in Medicine - Rheumatology.
+      * Autor de mais de 300 comunicações científicas e 85 publicações em revistas especializadas.
+      * Galardoado com 9 Prémios Científicos e 5 Menções Honrosas.
+
+  experience:
+    enable: false 
+
+  education:
+    enable: false
+
+  achievements:
+    enable: true
+    title: "Saúde Reumática e Óssea"
+    items:
+      - title: "A Reumatologia e o Especialista"
+        content: |-
+          O Reumatologista é o médico especialista formado e treinado para a prevenção, o diagnóstico e o tratamento das doenças reumáticas. 
+
+          Estas são um conjunto de mais de 100 doenças que podem surgir em qualquer idade, podendo ter diferentes causas e que atingem preferencialmente os tecidos do tecido conjuntivo das articulações, como a membrana sinovial, as cartilagens e os ossos, assim como os ligamentos, tendões e músculos. No caso das doenças reumáticas sistémicas, podem atingir também outros aparelhos, como a pele, os olhos e os sistemas cardiovascular, respiratório e renal.
+
+      - title: "Osteoartrose e Osteoporose"
+        content: |-
+          As doenças reumáticas mais comuns são a osteoartrose e as lesões dos tecidos peri-articulares, como as comummente designadas “tendinites”, frequentemente associadas à sobrecarga das estruturas essenciais à função das articulações. 
+
+          Muito frequente, sobretudo a partir dos 65 anos na mulher e dos 70 anos no homem, é também a osteoartrose, que corresponde a uma fragilidade dos ossos de que resulta a ocorrência de fraturas com traumatismos ligeiros (punho, vértebras e anca), das quais podem resultar incapacidade definitiva e mesmo risco de vida.
+
+      - title: "Doenças Sistémicas e Inflamatórias"
+        content: |-
+          Igualmente comuns são a gota úrica e a condrocalcinose. Já as doenças reumáticas sistémicas, ou “doenças auto-imunes”, são inflamações mediadas pelo sistema imunitário que podem evoluir para incapacidade permanente se não forem precocemente diagnosticadas. 
+
+          São exemplos a artrite reumatóide, a artrite psoriática, as espondilartrites (como a espondilite anquilosante), o lúpus eritematoso sistémico, a síndrome de Sjögren, as miopatias inflamatórias, as vasculites e a esclerose sistémica (“esclerodermia”).
+
+  projects:
+    enable: false
+
+  contact:
+    enable: true
+    title: "Consultórios e Marcações"
+    content: |-
+      ### LISBOA
+      **Clínica Dr. Passos Angelo**<br>
+      Morada: <a href="https://maps.app.goo.gl/Zh5PEAGeyPP3vnsB9" target="_blank" style="text-decoration: underline;">Avenida da Liberdade, 11, 1° Andar, 1250-214 Lisboa</a><br>
+      Telefones: <a href="tel:+351213219830">213 219 830</a> ou <a href="tel:+351960282580">960 282 580</a><br>
+      E-mail: <a href="mailto:marcacoesclinicapassosangelo@gmail.com">marcacoesclinicapassosangelo@gmail.com</a><br>
+      [**💬 Marcar via WhatsApp (Lisboa)**](https://wa.me/351960282580?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta%20em%20Lisboa%20com%20o%20Dr.%20José%20Carlos%20Romeu)
+      
+      <br><br>
+
+      ### SETÚBAL
+      **Consultório Dr. José Carlos Romeu**<br>
+      Morada: <a href="https://maps.app.goo.gl/5SjpewtL2eAfDpFB9" target="_blank" style="text-decoration: underline;">Rua Major Afonso Pala, 63-67, 2900-199 Setúbal</a><br>
+      Telefones: <a href="tel:+351265522226">265 522 226</a> ou <a href="tel:+351918574697">918 574 697</a><br>
+      E-mail: <a href="mailto:secretaria@socorrosmutuos.pt">secretaria@socorrosmutuos.pt</a><br>
+      [**💬 Marcar via WhatsApp (Setúbal)**](https://wa.me/351918574697?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta%20em%20Setúbal%20com%20o%20Dr.%20José%20Carlos%20Romeu)
+      
+      <br><br>
+
+      ### QUINTA DO CONDE
+      **Policlínica Fátima**<br>
+      Morada: <a href="https://maps.app.goo.gl/T19eeohBZCSUnFMaA" target="_blank" style="text-decoration: underline;">Av. Cova dos Vidros LT 2032/3, 2975-333 Quinta do Conde</a><br>
+      Telefones: <a href="tel:+351212104135">212 104 135</a> ou <a href="tel:+351935593213">935 593 213</a><br>
+      E-mail: <a href="mailto:policlinica.fatimalda@gmail.com">policlinica.fatimalda@gmail.com</a><br>
+      [**💬 Marcar via WhatsApp (Quinta do Conde)**](https://wa.me/351935593213?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta%20na%20Quinta%20do%20Conde%20com%20o%20Dr.%20José%20Carlos%20Romeu)
+    btnName: ""
+    btnLink: ""
+
+  footer:
+    enable: true
+    content: |-
+      © 2026 Dr. José Carlos Romeu — Reumatologista<br>
+    recentPosts:
+      enable: false
+    socialNetworks: {}
+
+  listPages:
+    disableFeaturedImage: false
+  singlePages:
+    socialShare: false
+    readTime:
+      enable: false
+    scrollprogress:
+      enable: false
+    tags:
+      openInNewTab: false
+      

@@ -1,0 +1,529 @@
+<style>
+    /* ==========================================================
+       1. MENU SUPERIOR FIXO (STICKY NAVBAR)
+       ========================================================== */
+    .navbar {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        z-index: 9999 !important;
+        background-color: #ffffff !important;
+        border-bottom: 1px solid #eee !important;
+        padding: 10px 0 !important;
+        transition: all 0.3s ease;
+    }
+
+    body {
+        padding-top: 85px !important; 
+    }
+
+    /* ==========================================================
+       2. ESPAÇAMENTOS E SCROLL DO MENU FIXO
+       ========================================================== */
+    html {
+        scroll-padding-top: 85px !important; 
+        scroll-behavior: smooth !important;
+    }
+
+    section, #about, #achievements, #contact {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+        scroll-margin-top: 0 !important; 
+    }
+
+    /* ==========================================================
+       3. SECÇÃO HERO (DESKTOP E MOBILE)
+       ========================================================== */
+    @media (min-width: 992px) {
+        .hero a.btn, .hero button, .hero-btn-container {
+            margin-left: 0 !important;
+            margin-right: auto !important;
+            text-align: left !important;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #hero .container > .row {
+            display: flex !important;
+            flex-direction: column-reverse !important;
+        }
+        #hero {
+            padding-top: 10px !important;
+            text-align: center !important;
+        }
+        #hero .hero-image-container, #hero img {
+            margin-top: 0 !important;
+            margin-bottom: 35px !important; 
+            display: block !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        #hero h1 {
+            font-size: 1.8rem !important;
+            margin-bottom: 10px !important;
+        }
+        #hero h2 {
+            font-size: 1.15rem !important;
+            color: #777777 !important;
+        }
+    }
+    
+    /* ==========================================================
+       4. BOTÃO VOLTAR AO TOPO - RESOLUÇÃO FINAL E LIMPA
+       ========================================================== */
+
+    /* 1. MATAR O BOTÃO NATIVO DO TEMA (#topScroll) */
+    #topScroll {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+
+    /* 2. ESTILIZAR O TEU BOTÃO (#back-to-top) */
+    /* Design: Branco, Redondo, 44px, Sombra suave */
+    #back-to-top {
+        position: fixed !important;
+        bottom: 25px !important;
+        right: 25px !important;
+        width: 44px !important;
+        height: 44px !important;
+        background-color: #ffffff !important;
+        color: #777777 !important;
+        border: 1px solid #dddddd !important;
+        border-radius: 50% !important;
+        z-index: 99999 !important;
+
+        /* Alinhamento */
+        display: none !important; /* Escondido por padrão, o JS ativa-o */
+        align-items: center !important;
+        justify-content: center !important;
+        text-decoration: none !important;
+        
+        /* Estética e Suavidade */
+        opacity: 0;
+        transition: all 0.3s ease-in-out !important;
+        
+    }
+
+    /* 3. GATILHO: Mostrar o teu botão quando tiver a classe .active */
+    #back-to-top.active {
+        display: inline-flex !important;
+        opacity: 1 !important;
+    }
+
+    /* 4. HOVER (O teu azul marinho) */
+    #back-to-top:hover {
+        color: #003366 !important;
+        border-color: #003366 !important;
+        transform: scale(0.9) !important;
+        background-color: #f8f9fa !important;
+    }
+
+    /* 5. REMOVER O 'GLOW' (Outline/Sombra ao focar ou clicar) */
+    /* Isto remove o brilho azul padrão do navegador e sombras fortes ao clicar */
+    #back-to-top:focus, 
+    #back-to-top:active, 
+    #back-to-top:visited {
+        outline: none !important;
+        box-shadow: none !important; /* Removemos sombras completamente no clique/foco */
+    }
+
+    /* 6. LIMPEZA (Garante que não aparecem ícones estranhos do tema) */
+    #back-to-top span, #back-to-top i, #back-to-top svg, #back-to-top::before {
+        display: none !important;
+        content: none !important;
+    }
+
+        
+    /* ==========================================================
+       5. LIMPEZA DE BORDAS E GLOWS
+       ========================================================== */
+    * { 
+        box-shadow: none !important; 
+        filter: none !important; 
+        text-shadow: none !important; 
+        outline: none !important;
+    }
+
+    #hero img, #hero picture img, .hero-image-container img, .hero-img img, img.hero-img { 
+        border: none !important;        
+        outline: none !important;       
+        filter: none !important;        
+        box-shadow: none !important;    
+        border-radius: 50% !important; 
+        padding: 0 !important;          
+        opacity: 1 !important;          
+        background-color: transparent !important; 
+    }
+
+    #hero, .container, .row, body, section, .card {
+        background-color: #ffffff !important;
+        background: #ffffff !important;
+    }
+
+    /* ==========================================================
+       6. LOGÓTIPO HORIZONTAL (SEO SEGURO)
+       ========================================================== */
+    .navbar-brand {
+        font-size: 0 !important; 
+        color: transparent !important;
+    }
+    .navbar-brand *:not(img) { 
+        display: none !important; 
+        visibility: hidden !important;
+        opacity: 0 !important;
+        position: absolute !important;
+    }
+    .navbar-brand img {
+        display: block !important;
+        font-size: 16px !important; 
+        content: url("/images/logo.png") !important;
+        height: 60px !important; 
+        width: auto !important;
+    }
+
+    /* ==========================================================
+       7. ALINHAMENTO DE TÍTULOS (CENTRADOS)
+       ========================================================== */
+    .section-title, #experience h2, #achievements h2, .experience-titlem {
+        text-align: center !important;
+        color: #003366 !important;
+        font-weight: 700 !important;
+        margin-bottom: 40px !important;
+        width: 100% !important;
+        display: block !important;
+    }
+
+    /* ==========================================================
+       8. SAÚDE REUMÁTICA E ÓSSEA (#achievements)
+       ========================================================== */
+    #achievements .row {
+        align-items: flex-start !important; 
+    }
+
+    #achievements .card {
+        background-color: #ffffff !important;
+        border: 1px solid #003366 !important; 
+        border-radius: 8px !important;
+        padding: 25px !important;
+        text-align: left !important;
+        box-shadow: none !important; 
+        height: auto !important;    
+        margin-bottom: 30px !important;
+    }
+
+    #achievements .card-title, #achievements h4 {
+        color: #000000 !important; 
+        font-size: 1.25rem !important;
+        font-weight: 700 !important;
+        text-transform: none !important;
+        margin-bottom: 15px !important;
+    }
+
+    #achievements .card-text, #achievements .text-secondary, #achievements p {
+        color: #777777 !important; 
+        font-size: 1.05rem !important;
+        background-color: transparent !important;
+    }
+
+    /* ==========================================================
+       9. ESCALA TIPOGRÁFICA MOBILE (< 991px)
+       ========================================================== */
+    @media (max-width: 991px) {
+        body, p, li, a, .card-text, .text-secondary {
+            font-size: 1rem !important; 
+            line-height: 1.5 !important;
+        }
+        #hero h1, #hero .display-1, #hero .display-2 {
+            font-size: 1.75rem !important;
+            line-height: 1.2 !important;
+            margin-bottom: 8px !important;
+            font-weight: 700 !important;
+        }
+        #hero h2, #hero .hero-subtitle {
+            font-size: 1.1rem !important;
+            color: #777777 !important;
+            font-weight: 500 !important;
+            margin-top: 0 !important;
+        }
+        .section-title, #experience h2, #achievements h2, #contact h2 {
+            font-size: 1.5rem !important;
+            margin-bottom: 24px !important;
+        }
+        .card-title, h4, .card h4 {
+            font-size: 1.2rem !important;
+            font-weight: 700 !important;
+            margin-bottom: 12px !important;
+        }
+    }
+
+    /* ==========================================================
+       10. CONSULTÓRIOS E RODAPÉ
+       ========================================================== */
+    #contact h3, .contact-city-title {
+        font-size: 1.75rem !important; 
+        font-weight: 500 !important;
+        color: #003366 !important;
+        margin-bottom: 15px !important;
+        letter-spacing: 0px;
+        margin-top: 0 !important;
+    }
+
+    #contact h4, .clinic-name, #contact strong {
+        font-size: 1.1rem !important;
+        color: #333333 !important;
+        display: block;
+        margin-bottom: 10px !important;
+    }
+
+    #contact a, #contact p {
+        font-size: 1rem !important;
+        color: #444444 !important;
+        text-decoration: none !important;
+    }
+
+    #contact a:hover {
+        color: #003366 !important;
+        text-decoration: underline !important;
+    }
+
+    .whatsapp-link {
+        display: inline-block;
+        margin-top: 10px;
+        font-weight: 600;
+        color: #25D366 !important; 
+    }
+
+    footer, footer a, footer p, footer span {
+        color: #444444 !important;
+        text-decoration: none !important;
+        font-size: 0.9rem !important;
+        transition: color 0.2s;
+    }
+    
+    footer a:hover {
+        color: #003366 !important;
+        text-decoration: underline !important;
+    }
+
+    .footer-divider {
+        margin: 0 10px;
+        color: #ddd;
+    }
+    
+    footer p {
+        max-width: 100% !important; /* Remove o limite que causava a quebra */
+        width: 100% !important;
+        display: block !important;
+        margin: 10px auto !important;
+        white-space: normal !important; /* Garante que só quebra se o ecrã acabar */
+    }
+
+    /* ==========================================================
+       11. SECÇÃO "SOBRE MIM" (ESTRUTURA E TEXTO CORRIDO)
+       ========================================================== */
+    /* Remove Título e Timeline original */
+    #about .section-title,
+    #about .timeline-section::before,
+    #about .timeline-icon,
+    #about .timeline-card::after { display: none !important; }
+
+    /* Forçar largura a 100% e destruir coluna do Bootstrap */
+    #about .container { max-width: 1400px !important; width: 96% !important; }
+    #about .row > div.col-lg-8:nth-child(2), #about .row > div:nth-child(2) {
+        flex: 1 1 auto !important; 
+        max-width: 100% !important; 
+        width: 100% !important;     
+    }
+
+    /* Layout Desktop vs Mobile (Ocultação da foto no Mobile) */
+    @media (min-width: 992px) {
+        #about .row { display: flex !important; flex-wrap: nowrap !important; align-items: flex-start !important; }
+        #about .row > div:nth-child(1) { display: block !important; flex: 0 0 320px !important; max-width: 320px !important; width: 320px !important; }
+        #about .row > div:nth-child(2) { padding-left: 60px !important; }
+    }
+    @media (max-width: 991px) {
+        #about .row { display: block !important; }
+        #about .row > div:nth-child(1) { display: none !important; }
+        #about .row > div:nth-child(2) { padding-left: 0 !important; }
+    }
+
+    /* ==========================================================
+       12. SECÇÃO "SOBRE MIM" (TIPOGRAFIA E LISTAS UNIFICADAS)
+       ========================================================== */
+    /* Libertar limites do texto */
+    #about .about-content, #about .content, #about ul, #about p {
+        max-width: 100% !important; width: 100% !important; display: block !important; white-space: normal !important;
+    }
+
+    /* Introdução */
+    #about .content p {
+        font-size: 1.3rem !important; line-height: 1.7; color: #333; margin-bottom: 25px;
+    }
+
+    /* Títulos Intermédios (ex: Percurso Profissional) - O Falso Culpado */
+    #about .content strong {
+        font-size: 1.3rem !important; color: #003366 !important; display: block; 
+        margin-top: 30px; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px;
+    }
+
+    /* Configuração Única e Limpa das Listas (Marcadores azuis) */
+    #about ul {
+        list-style-type: none; padding-left: 0; margin-top: 20px;
+    }
+
+    #about ul li {
+        position: relative !important;
+        padding-left: 30px !important; 
+        margin-bottom: 12px !important;
+        font-size: 1.05rem !important;
+        line-height: 1.6 !important;
+        color: #444444 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        display: block !important;
+        white-space: normal !important; 
+    }
+
+    /* O traço azul vertical */
+    #about ul li::before {
+        content: ''; position: absolute; left: 0; top: 4px; width: 4px; height: 1.2rem;
+        background-color: #003366 !important; border-radius: 2px;
+    }
+
+    /* A SOLUÇÃO FINAL: Datas do tamanho do texto + Cor Azul Marinho */
+    #about .content ul li strong,
+    #about .content ul li b {
+        font-size: 1em !important;      /* Tamanho igual ao texto à frente */
+        color: #003366 !important;      /* AZUL MARINHO que querias */
+        font-weight: 700 !important;    /* Negrito */
+        display: inline !important; 
+        border: none !important;        /* Remove a linha de baixo do título */
+        padding: 0 !important; 
+        margin: 0 !important;
+        text-decoration: none !important;
+    }
+
+
+    /* ==========================================================
+       13. BOTÃO HERO: EFEITO HOVER E CENTRAGEM ABSOLUTA (MOBILE)
+       ========================================================== */
+    
+    /* 1. Estado Normal e Hover */
+    .hero a.btn, #hero a.btn, .btn-primary {
+        color: #003366 !important; 
+        border-color: #003366 !important;
+        background-color: transparent !important;
+        font-weight: normal !important; 
+        transition: all 0.3s ease !important; 
+    }
+
+    .hero a.btn:hover, #hero a.btn:hover, .btn-primary:hover {
+        background-color: #003366 !important; 
+        color: #ffffff !important;            
+        border-color: #003366 !important;
+    }
+
+    /* 2. Bootstrap (Mobile) */
+    @media (max-width: 991px) {
+        
+        /* Caixas flexíveis do Bootstrap dentro do Hero alinhadas ao centro */
+        #hero div, 
+        .hero div,
+        #hero .d-flex, 
+        .hero .d-flex {
+            justify-content: center !important;
+            text-align: center !important;
+            align-items: center !important;
+        }
+
+        /* Força a margem do botão a distribuir espaço por igual */
+        #hero a.btn, 
+        .hero a.btn,
+        #hero button {
+            display: flex !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            margin-top: 25px !important;
+            margin-bottom: 25px !important;
+        }
+    }
+
+    /* ==========================================================
+       14. REMOVER ÍNDICE (TOC) NA POLÍTICA DE PRIVACIDADE
+       ========================================================== */
+    /* 1. Esconde o menu de índice que aparece à direita */
+    .toc, #toc, #TableOfContents, .toc-container {
+        display: none !important;
+    }
+
+    /* 2. Força o conteúdo a ocupar os 100% da largura (sem a coluna vazia) */
+    .col-lg-9 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    
+    /* Ajuste extra para o texto não ficar colado às bordas */
+    .content-column {
+        padding-right: 0 !important;
+    }
+    
+    
+</style>
+
+<footer class="text-center py-5" style="background-color: #f8f9fa; border-top: 1px solid #eee; margin-top: 50px;">
+    <div class="container">
+        
+        <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 30px; margin-bottom: 30px;">
+            
+            <a href="https://www.linkedin.com/in/josecarlosromeu/" target="_blank" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#444444" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                </svg>
+            </a>
+
+            <a href="https://spreumatologia.pt/" target="_blank" style="text-decoration: none; font-weight: 600; display: flex; align-items: center;">
+                <img src="/images/spr.png" alt="SPR" style="height: 25px; margin-right: 10px;">
+                Sociedade Portuguesa de Reumatologia
+            </a>
+
+            <a href="/privacidade/" style="text-decoration: none; font-weight: 600;">Política de Privacidade</a>
+
+            <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">
+                <img src="/images/livro-reclamacoes.png" alt="Livro de Reclamações" style="height: 35px;">
+            </a>
+        </div>
+
+        <hr style="width: 50px; border-top: 2px solid #003366; margin: 20px auto;">
+
+        <p style="font-size: 1.2rem; font-weight: 700; color: #003366; margin-bottom: 10px;">© 2026 Dr. José Carlos Romeu — Reumatologista</p>
+        <p style="font-size: 0.85rem; color: #777; max-width: 600px; margin: 0 auto;">A informação aqui contida é meramente informativa e não substitui o aconselhamento médico.
+        </p>
+
+       <div style="margin-top: 30px;">
+    <a href="#" id="back-to-top" title="Voltar ao Topo" style="display: inline-flex !important;">↑</a>
+    </div>
+    <script>
+    window.addEventListener('scroll', function() {
+        var btn = document.getElementById('back-to-top');
+        if (window.scrollY > 300) { // Se descer mais de 300px
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+</script>
+</footer>
+
+<div id="aviso-cookies" style="display: none; position: fixed; bottom: 20px; left: 20px; max-width: 320px; background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); z-index: 99999; border: 1px solid #eee;">
+    <p style="font-size: 0.85rem; margin-bottom: 15px;">Utilizamos cookies para melhorar a sua experiência. <a href="/privacidade/" style="text-decoration: underline;">Saber mais</a>.</p>
+    <button onclick="aceitarCookies()" style="background: #003366; color: #fff !important; border: none; width: 100%; padding: 10px; border-radius: 6px; font-weight: bold; cursor: pointer;">Aceitar e Fechar</button>
+</div>
+
+<script>
+    var avisoCookies = document.getElementById("aviso-cookies");
+    if (!localStorage.getItem("cookiesAceites_JCR")) { avisoCookies.style.display = "block"; }
+    function aceitarCookies() { localStorage.setItem("cookiesAceites_JCR", "true"); avisoCookies.style.display = "none"; }
+</script>

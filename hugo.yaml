@@ -46,7 +46,7 @@ markup:
 
 params:
   logo:
-    url: "images/logo.webp"  # O seu logo horizontal
+    url: "https://anromeu.github.io/site-dr-romeu/images/logo.webp"  # O seu logo horizontal
     alt: "Dr. José Carlos Romeu - Reumatologista" # Vital para SEO
     text: "" # Deixe vazio se o nome já está na imagem
   description: "Dr. José Carlos Romeu - Médico Reumatologista. Especialista em saúde óssea e doenças reumáticas com consultórios em Lisboa, Setúbal e Quinta do Conde."
@@ -76,7 +76,7 @@ params:
   navbar:
     align: ms-auto
     brandName: "Dr. José Carlos Romeu"
-    brandLogo: "images/logo.webp"
+    brandLogo: "https://anromeu.github.io/site-dr-romeu/images/logo.webp"
     disableSearch: true
     stickyNavBar:
       enable : true

@@ -75,7 +75,7 @@ params:
 
   navbar:
     align: ms-auto
-    brandName: "Dr. José Carlos Romeu"
+    brandName: ""
     brandLogo: "images/logo.webp"
     disableSearch: true
     stickyNavBar:

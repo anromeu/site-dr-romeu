@@ -1,4 +1,4 @@
-baseURL: "https://anromeu.github.io/site-dr-romeu/"
+baseURL: "https://drjosecarlosromeu.pt/"
 canonifyURLs: true
 relativeURLs: true
 title: "Dr. José Carlos Romeu - Reumatologista"
@@ -46,8 +46,8 @@ markup:
 
 params:
   logo:
-    url: "images/logo-oficial.png"  # O seu logo horizontal
-    alt: "Dr. José Carlos Romeu - Reumatologista" # Vital para SEO
+    url: "/images/logo-oficial.png"  # logo horizontal
+    alt: "Dr. José Carlos Romeu - Reumatologista" # SEO
     text: "" # Deixe vazio se o nome já está na imagem
   description: "Dr. José Carlos Romeu - Médico Reumatologista. Especialista em saúde óssea e doenças reumáticas com consultórios em Lisboa, Setúbal, Azeitão e Quinta do Conde."
   keywords: "reumatologia, reumatologista lisboa, osteoporose, lúpus, saúde óssea, reumatologista setúbal, reumatologista quinta do conde, reumatologista azeitão, médico ossos, José Carlos Romeu"
@@ -77,7 +77,7 @@ params:
   navbar:
     align: ms-auto
     brandName: "Dr. José Carlos Romeu"
-    brandLogo: "images/logo-oficial.png"
+    brandLogo: "/images/logo-oficial.png"
     disableSearch: true
     stickyNavBar:
       enable : true

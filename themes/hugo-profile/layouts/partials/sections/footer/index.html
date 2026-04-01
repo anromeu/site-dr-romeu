@@ -70,10 +70,10 @@
     }
     
     /* ==========================================================
-       4. BOTÃO VOLTAR AO TOPO - RESOLUÇÃO FINAL E LIMPA
+       4. BOTÃO VOLTAR AO TOPO
        ========================================================== */
 
-    /* 1. MATAR O BOTÃO NATIVO DO TEMA (#topScroll) */
+    /* 1. DESLIGAR BACK-TO-TOP THEME (#topScroll) */
     #topScroll {
         display: none !important;
         visibility: hidden !important;
@@ -81,7 +81,7 @@
         pointer-events: none !important;
     }
 
-    /* 2. ESTILIZAR O TEU BOTÃO (#back-to-top) */
+    /* 2. LAYOUT DO BOTÃO (#back-to-top) */
     /* Design: Branco, Redondo, 44px, Sombra suave */
     #back-to-top {
         position: fixed !important;
@@ -107,7 +107,7 @@
         
     }
 
-    /* 3. GATILHO: Mostrar o teu botão quando tiver a classe .active */
+    /* 3. TRIGGER: Mostrar o teu botão quando tiver a classe .active */
     #back-to-top.active {
         display: inline-flex !important;
         opacity: 1 !important;
@@ -398,7 +398,7 @@
         font-size: 1.3rem !important; line-height: 1.7; color: #333; margin-bottom: 25px;
     }
 
-    /* Títulos Intermédios (ex: Percurso Profissional) - O Falso Culpado */
+    /* Títulos Intermédios (ex: Percurso Profissional) */
     #about .content strong {
         font-size: 1.3rem !important; color: #003366 !important; display: block; 
         margin-top: 30px; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px;
@@ -428,7 +428,7 @@
         background-color: #003366 !important; border-radius: 2px;
     }
 
-    /* A SOLUÇÃO FINAL: Datas do tamanho do texto + Cor Azul Marinho */
+    /* Datas do tamanho do texto + Cor Azul Marinho */
     #about .content ul li strong,
     #about .content ul li b {
         font-size: 1em !important;      /* Tamanho igual ao texto à frente */
@@ -443,7 +443,7 @@
 
 
     /* ==========================================================
-       13. BOTÃO HERO: EFEITO HOVER E CENTRAGEM ABSOLUTA (MOBILE)
+       13. BOTÃO HERO: EFEITO HOVER E CENTRADO  (MOBILE)
        ========================================================== */
     
     /* 1. Estado Normal e Hover */

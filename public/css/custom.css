@@ -1,0 +1,4 @@
+/* Logo do Tema não sobrepõe nosso */
+.navbar-brand img {
+    content: unset !important;
+}

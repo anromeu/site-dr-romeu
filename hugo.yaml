@@ -49,7 +49,7 @@ params:
     url: "images/logo-oficial.png"  # O seu logo horizontal
     alt: "Dr. José Carlos Romeu - Reumatologista" # Vital para SEO
     text: "" # Deixe vazio se o nome já está na imagem
-  description: "Dr. José Carlos Romeu - Médico Reumatologista. Especialista em saúde óssea e doenças reumáticas com consultórios em Lisboa, Setúbal e Quinta do Conde."
+  description: "Dr. José Carlos Romeu - Médico Reumatologista. Especialista em saúde óssea e doenças reumáticas com consultórios em Lisboa, Setúbal, Azeitão e Quinta do Conde."
   keywords: "reumatologia, reumatologista lisboa, osteoporose, lúpus, saúde óssea, reumatologista setúbal, reumatologista quinta do conde, reumatologista azeitão, médico ossos, José Carlos Romeu"
   images: ["images/og-card.webp"]
   favicon: "images/fav1.webp"

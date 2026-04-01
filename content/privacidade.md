@@ -20,7 +20,7 @@ Os dados fornecidos através dos contactos diretos (WhatsApp, Telefone ou E-mail
 * Resposta a dúvidas clínicas ou administrativas urgentes colocadas pelo paciente.
 
 ### 4. Partilha de Dados
-Garantimos o absoluto sigilo médico. Os seus dados não são vendidos, cedidos ou utilizados para fins de marketing. São partilhados apenas de forma interna com os serviços de secretariado e apoio administrativo da **Clínica Dr. Passos Angelo (Lisboa)**, do **Consultório de Setúbal** ou da **Policlínica Fátima (Quinta do Conde)**, consoante o local escolhido por si para a consulta.
+Garantimos o absoluto sigilo médico. Os seus dados não são vendidos, cedidos ou utilizados para fins de marketing. São partilhados apenas de forma interna com os serviços de secretariado e apoio administrativo da **Clínica Dr. Passos Angelo (Lisboa)**, do **Consultório de Setúbal**, da **Santa Casa da Misericórdia de Azeitão** ou da **Policlínica Fátima (Quinta do Conde)**, consoante o local escolhido por si para a consulta.
 
 ### 5. Os seus Direitos
 Nos termos da lei, tem o direito de solicitar o acesso, a retificação ou o apagamento dos seus dados pessoais dos registos administrativos das clínicas, contactando diretamente o respetivo secretariado através dos telefones e e-mails indicados na secção "Consultórios".

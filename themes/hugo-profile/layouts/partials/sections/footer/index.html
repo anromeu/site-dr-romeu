@@ -326,25 +326,33 @@
 
     .whatsapp-link {
         display: inline-flex !important;
-        align-items: center !important; 
+        align-items: center !important;  /* Alinhamento vertical central */
+        justify-content: flex-start !important;
         gap: 8px !important;
-        margin-top: 12px;
+        margin-top: 15px !important;
         font-weight: 700 !important;
         color: #25D366 !important;
         text-decoration: none !important;
-        line-height: 1 !important;       /* Resolve o problema do texto "empurrar" o ícone */
+        line-height: 1 !important;       /* ESSENCIAL: Remove o espaço extra da fonte */
         vertical-align: middle !important;
+    }
+
+    .whatsapp-link span {
+        display: inline-block !important;
+        line-height: 1 !important;       /* Garante que o texto não tenha "gordura" em volta */
+    }
+
+    .whatsapp-link svg {
+        width: 20px !important;          /* Aumentamos ligeiramente para bater com o peso do negrito */
+        height: 20px !important;
+        flex-shrink: 0 !important;
+        display: block !important;
+        /* Se o ícone parecer ligeiramente alto, descomenta a linha abaixo: */
+        /* transform: translateY(1px); */ 
     }
 
     .whatsapp-link:hover {
         text-decoration: underline !important;
-    }
-
-    .whatsapp-link svg {
-        width: 18px !important;  /* Tamanho fixo para não variar entre consultórios */
-        height: 18px !important;
-        display: block !important;
-        flex-shrink: 0;
     }
 
 

@@ -200,38 +200,38 @@ params:
     content: |-
       ### LISBOA
       **Clínica Dr. Passos Ângelo**<br>
-      Morada: <a href="https://maps.app.goo.gl/Zh5PEAGeyPP3vnsB9" target="_blank" style="text-decoration: underline;">Av. da Liberdade, 11, 1° Andar, 1250-214 Lisboa</a><br>
+      Morada: <a href="https://maps.app.goo.gl/Zh5PEAGeyPP3vnsB9" target="_blank" rel="noopener" aria-label="Ver morada de Lisboa no Google Maps" style="text-decoration: underline;">Av. da Liberdade, 11, 1° Andar, 1250-214 Lisboa</a><br>
       Telefones: <a href="tel:+351213219830">213 219 830</a> ou <a href="tel:+351960282580">960 282 580</a><br>
       E-mail: <a href="mailto:marcacoesclinicapassosangelo@gmail.com">marcacoesclinicapassosangelo@gmail.com</a><br>
-      [**💬 Marcar via WhatsApp (Lisboa)**](https://wa.me/351960282580?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta%20em%20Lisboa%20com%20o%20Dr.%20José%20Carlos%20Romeu)
+      <a href="https://wa.me/351960282580?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta%20em%20Lisboa%20com%20o%20Dr.%20José%20Carlos%20Romeu" target="_blank" rel="noopener" style="text-decoration: none;">**💬 Marcar via WhatsApp (Lisboa)**</a>
       
       <br><br>
 
       ### SETÚBAL
       **Consultório Dr. José Carlos Romeu**
       <span style="font-size: 1.05rem; font-weight: 700; display: block; margin-top: -10px; margin-bottom: 0px;">Associação de Socorros Mútuos Setubalense</span><br>
-      Morada: <a href="https://maps.app.goo.gl/5SjpewtL2eAfDpFB9" target="_blank" style="text-decoration: underline;">Rua Major Afonso Pala, 63-67, 2900-199 Setúbal</a><br>
+      Morada: <a href="https://maps.app.goo.gl/5SjpewtL2eAfDpFB9" target="_blank" rel="noopener" aria-label="Ver morada de Setúbal no Google Maps" style="text-decoration: underline;">Rua Major Afonso Pala, 63-67, 2900-199 Setúbal</a><br>
       Telefones: <a href="tel:+351265522226">265 522 226</a> ou <a href="tel:+351918574697">918 574 697</a><br>
       E-mail: <a href="mailto:secretaria@socorrosmutuos.pt">secretaria@socorrosmutuos.pt</a><br>
-      [**💬 Marcar via WhatsApp (Setúbal)**](https://wa.me/351918574697?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta%20em%20Setúbal%20com%20o%20Dr.%20José%20Carlos%20Romeu)
+      <a href="https://wa.me/351918574697?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta%20em%20Setúbal%20com%20o%20Dr.%20José%20Carlos%20Romeu" target="_blank" rel="noopener" style="text-decoration: none;">**💬 Marcar via WhatsApp (Setúbal)**</a>
       
       <br><br>
 
       ### AZEITÃO
       **Santa Casa da Misericórdia de Azeitão**<br>
-      Morada: <a href="https://maps.app.goo.gl/frVitkJvLdBHVrzXA" target="_blank" style="text-decoration: underline;">Rua José Augusto Coelho 154, 2925-539 Azeitão</a><br>
+      Morada: <a href="https://maps.app.goo.gl/frVitkJvLdBHVrzXA" target="_blank" rel="noopener" aria-label="Ver morada de Azeitão no Google Maps" style="text-decoration: underline;">Rua José Augusto Coelho 154, 2925-539 Azeitão</a><br>
       Telefones: <a href="tel:+351212198900">212 198 900</a> ou <a href="tel:+351963672016">963 672 016</a><br>
       E-mail: <a href="mailto:geral@scmazeitao.pt">geral@scmazeitao.pt</a> ou <a href="mailto:rececao@scmazeitao.pt">rececao@scmazeitao.pt</a><br>
-      [**💬 Marcar via WhatsApp (Azeitão)**](https://wa.me/351963672016?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta%20em%20Azeitão%20com%20o%20Dr.%20José%20Carlos%20Romeu)
+      <a href="https://wa.me/351963672016?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta%20em%20Azeitão%20com%20o%20Dr.%20José%20Carlos%20Romeu" target="_blank" rel="noopener" style="text-decoration: none;">**💬 Marcar via WhatsApp (Azeitão)**</a>
       
       <br><br>
 
       ### QUINTA DO CONDE
       **Policlínica Fátima**<br>
-      Morada: <a href="https://maps.app.goo.gl/T19eeohBZCSUnFMaA" target="_blank" style="text-decoration: underline;">Av. Cova dos Vidros LT 2032/3, 2975-333 Quinta do Conde</a><br>
+      Morada: <a href="https://maps.app.goo.gl/T19eeohBZCSUnFMaA" target="_blank" rel="noopener" aria-label="Ver morada da Quinta do Conde no Google Maps" style="text-decoration: underline;">Av. Cova dos Vidros LT 2032/3, 2975-333 Quinta do Conde</a><br>
       Telefones: <a href="tel:+351212104135">212 104 135</a> ou <a href="tel:+351935593213">935 593 213</a><br>
       E-mail: <a href="mailto:policlinica.fatimalda@gmail.com">policlinica.fatimalda@gmail.com</a><br>
-      [**💬 Marcar via WhatsApp (Quinta do Conde)**](https://wa.me/351935593213?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta%20na%20Quinta%20do%20Conde%20com%20o%20Dr.%20José%20Carlos%20Romeu)
+      <a href="https://wa.me/351935593213?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta%20na%20Quinta%20do%20Conde%20com%20o%20Dr.%20José%20Carlos%20Romeu" target="_blank" rel="noopener" style="text-decoration: none;">**💬 Marcar via WhatsApp (Quinta do Conde)**</a>
     btnName: ""
     btnLink: ""
 

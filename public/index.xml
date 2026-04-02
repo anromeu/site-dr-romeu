@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dr. José Carlos Romeu - Reumatologista</title>
-    <link>http://localhost:1313/site-dr-romeu/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Dr. José Carlos Romeu - Reumatologista</description>
     <generator>Hugo</generator>
     <language>pt-pt</language>
     <lastBuildDate>Wed, 01 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/site-dr-romeu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Política de Privacidade</title>
-      <link>http://localhost:1313/site-dr-romeu/privacidade/</link>
+      <link>http://localhost:1313/privacidade/</link>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/site-dr-romeu/privacidade/</guid>
+      <guid>http://localhost:1313/privacidade/</guid>
       <description>1. Compromisso com a Privacidade O Dr. José Carlos Romeu (Médico Reumatologista) e as clínicas parceiras onde exerce a sua atividade estão fortemente empenhados em respeitar a privacidade e a segurança dos dados pessoais e clínicos dos seus pacientes, em rigoroso cumprimento com o Regulamento Geral sobre a Proteção de Dados (RGPD).&#xA;2. Que dados recolhemos e como? Este website é meramente informativo. Não utilizamos formulários de contacto diretos nem sistemas de registo.</description>
     </item>
   </channel>

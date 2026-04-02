@@ -325,20 +325,26 @@
     }
 
     .whatsapp-link {
-        display: inline-flex !important; /* Força o alinhamento flexível */
-        align-items: center !important;  /* Alinha o ícone ao centro vertical do texto */
-        gap: 8px;                        /* Cria o espaço exato entre ícone e texto */
-        margin-top: 10px;
-        font-weight: 600;
+        display: inline-flex !important;
+        align-items: center !important; 
+        gap: 8px !important;
+        margin-top: 12px;
+        font-weight: 700 !important;
         color: #25D366 !important;
         text-decoration: none !important;
+        line-height: 1 !important;       /* Resolve o problema do texto "empurrar" o ícone */
+        vertical-align: middle !important;
     }
+
     .whatsapp-link:hover {
-        text-decoration: underline;
-        transform: scale(1.02);
+        text-decoration: underline !important;
     }
+
     .whatsapp-link svg {
-        display: block; /* Remove espaços vazios por baixo do SVG */
+        width: 18px !important;  /* Tamanho fixo para não variar entre consultórios */
+        height: 18px !important;
+        display: block !important;
+        flex-shrink: 0;
     }
 
 

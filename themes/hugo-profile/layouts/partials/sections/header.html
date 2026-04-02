@@ -57,7 +57,10 @@
                 {{ if .Site.Params.logo.url }}
                 <img src="{{ .Site.Params.logo.url | relURL }}" 
                     class="d-inline-block align-top" 
-                    style="height: 40px; width: auto; margin-right: 10px;">
+                    width="159" 
+                    height="40" 
+                    style="height: 40px; width: auto; margin-right: 10px;"
+                    alt="Dr. José Carlos Romeu - Reumatologia">
                 {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
                 {{ else }}
                 {{ .Site.Params.navbar.brandName | default .Site.Params.title }}

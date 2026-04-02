@@ -325,23 +325,22 @@
     }
 
     .whatsapp-link {
-        display: inline-flex;
-        align-items: center;
+        display: inline-flex !important; /* Força o alinhamento flexível */
+        align-items: center !important;  /* Alinha o ícone ao centro vertical do texto */
+        gap: 8px;                        /* Cria o espaço exato entre ícone e texto */
         margin-top: 10px;
         font-weight: 600;
         color: #25D366 !important;
-        text-decoration: none;
-        transition: transform 0.2s ease-in-out;
+        text-decoration: none !important;
     }
-
     .whatsapp-link:hover {
         text-decoration: underline;
         transform: scale(1.02);
     }
-
     .whatsapp-link svg {
-        margin-right: 8px;
+        display: block; /* Remove espaços vazios por baixo do SVG */
     }
+
 
     footer, footer a, footer p, footer span {
         color: #444444 !important;

@@ -325,30 +325,26 @@
     }
 
     .whatsapp-link {
-        display: inline-flex !important;
-        align-items: center !important;  /* Alinhamento vertical central */
-        justify-content: flex-start !important;
-        gap: 8px !important;
-        margin-top: 15px !important;
-        font-weight: 700 !important;
-        color: #25D366 !important;
-        text-decoration: none !important;
-        line-height: 1 !important;       /* ESSENCIAL: Remove o espaço extra da fonte */
-        vertical-align: middle !important;
+    display: inline-flex !important;
+    align-items: center !important;  /* Alinhamento básico */
+    gap: 8px !important;
+    margin-top: 15px !important;
+    font-weight: 700 !important;
+    color: #25D366 !important;
+    text-decoration: none !important;
+    line-height: 1.2 !important;
+    }
+
+    .whatsapp-link svg {
+        width: 20px !important;
+        height: 20px !important;
+        flex-shrink: 0 !important;
+        /* AJUSTE MANUAL: O valor 2px costuma ser o 'ponto doce' para alinhar com negrito */
+        transform: translateY(2px) !important; 
     }
 
     .whatsapp-link span {
         display: inline-block !important;
-        line-height: 1 !important;       /* Garante que o texto não tenha "gordura" em volta */
-    }
-
-    .whatsapp-link svg {
-        width: 20px !important;          /* Aumentamos ligeiramente para bater com o peso do negrito */
-        height: 20px !important;
-        flex-shrink: 0 !important;
-        display: block !important;
-        /* Se o ícone parecer ligeiramente alto, descomenta a linha abaixo: */
-        /* transform: translateY(1px); */ 
     }
 
     .whatsapp-link:hover {

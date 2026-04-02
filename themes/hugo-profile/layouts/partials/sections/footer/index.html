@@ -325,10 +325,22 @@
     }
 
     .whatsapp-link {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
         margin-top: 10px;
         font-weight: 600;
-        color: #25D366 !important; 
+        color: #25D366 !important;
+        text-decoration: none;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .whatsapp-link:hover {
+        text-decoration: underline;
+        transform: scale(1.02);
+    }
+
+    .whatsapp-link svg {
+        margin-right: 8px;
     }
 
     footer, footer a, footer p, footer span {

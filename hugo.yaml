@@ -222,8 +222,8 @@ params:
       <br><br>
 
       ### ALMADA
-      **Hospital Particular de Almada**<br>
-      <span style="font-size: 1.05rem; font-weight: 500; display: block; margin-top: -10px; margin-bottom: 0px;">Unisana Hospitais - Hospital de Almada</span><br>
+      **Hospital Particular de Almada**
+      <span style="font-size: 1.05rem; font-weight: 500; display: block; margin-top: -10px; margin-bottom: 0px;">Unisana Hospitais</span><br>
       Morada: <a href="https://maps.app.goo.gl/bAGaRMtA9uWWdwqo9" target="_blank" rel="noopener" aria-label="Ver morada do Consultório de Almada no Google Maps" style="text-decoration: underline;">Rua Manuel Febrero 85, 2805-192 Almada</a><br>
       Telefones: <a href="tel:+351212723680" onclick="gtag('event', 'click_phone', {'location': 'Almada'});">212 723 680</a><br>
       E-mail: <a href="mailto:almada@unisanahospitais.pt" aria-label="Enviar e-mail para a Hospital Particular de Almada" onclick="gtag('event', 'click_email', {'location': 'Almada'});">almada@unisanahospitais.pt</a><br>

@@ -46,11 +46,11 @@ markup:
 
 params:
   logo:
-    url: "/images/logo.webp"  # logo horizontal
-    alt: "Dr. José Carlos Romeu - Reumatologista" # SEO
-    text: "" # Deixe vazio se o nome já está na imagem
-  description: "Especialista em saúde óssea e doenças reumáticas com consultórios em Lisboa, Setúbal, Almada, Azeitão e Quinta do Conde."
-  keywords: "reumatologista, reumatologia lisboa, reumatologista setúbal, reumatologista almada, reumatologista azeitão, reumatologista quinta do conde, osteoporose, artrite reumatóide, lúpus, gota, dores articulares, médico de ossos, José Carlos Romeu"  images: ["images/og-card.webp"]
+    url: "/images/logo.webp"
+    alt: "Dr. José Carlos Romeu - Reumatologista"
+    text: ""
+  description: "Especialista em Reumatologia e Saúde Óssea. Tratamento de Osteoporose e Artrite em Lisboa, Setúbal, Almada, Azeitão e Quinta do Conde. Marque a sua consulta."
+  keywords: "reumatologia, reumatologista lisboa, osteoporose, lúpus, saúde óssea, reumatologista setúbal, reumatologista quinta do conde, reumatologista azeitão, reumatologista almada, médico ossos, José Carlos Romeu"
   images: ["images/og-card.webp"]
   favicon: "images/fav1.webp"
   customCss: ["css/custom.css"]

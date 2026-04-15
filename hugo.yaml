@@ -198,6 +198,28 @@ params:
     enable: true
     title: "Consultórios e Marcações"
     content: |-
+      <style>
+        .whatsapp-container {
+          display: inline-flex !important;
+          align-items: center !important;
+          gap: 8px !important;
+          text-decoration: none !important;
+          color: #25d366 !important; /* Cor verde do WhatsApp */
+          font-weight: 700;
+          transition: all 0.2s ease-in-out;
+          margin-top: 10px;
+        }
+        .whatsapp-container:hover {
+          transform: scale(1.05);
+          filter: brightness(1.1);
+        }
+        .whatsapp-container svg {
+          width: 20px !important;
+          height: 20px !important;
+          flex-shrink: 0;
+          margin: 0 !important;
+        }
+      </style>
       ### LISBOA
       **Clínica Dr. Passos Ângelo**<br>
       Morada: <a href="https://maps.app.goo.gl/Zh5PEAGeyPP3vnsB9" target="_blank" rel="noopener" aria-label="Ver morada de Consultório de Lisboa no Google Maps" style="text-decoration: underline;">Av. da Liberdade, 11, 1° Andar, 1250-214 Lisboa</a><br>
@@ -225,7 +247,7 @@ params:
       **Hospital Particular de Almada**
       <span style="font-size: 1.05rem; font-weight: 500; display: block; margin-top: -10px; margin-bottom: 0px;">Unisana Hospitais</span><br>
       Morada: <a href="https://maps.app.goo.gl/bAGaRMtA9uWWdwqo9" target="_blank" rel="noopener" aria-label="Ver morada do Consultório de Almada no Google Maps" style="text-decoration: underline;">Rua Manuel Febrero 85, 2805-192 Almada</a><br>
-      Telefones: <a href="tel:+351212723680" onclick="gtag('event', 'click_phone', {'location': 'Almada'});">212 723 680</a><br>
+      Telefone: <a href="tel:+351212723680" onclick="gtag('event', 'click_phone', {'location': 'Almada'});">212 723 680</a><br>
       E-mail: <a href="mailto:almada@unisanahospitais.pt" aria-label="Enviar e-mail para a Hospital Particular de Almada" onclick="gtag('event', 'click_email', {'location': 'Almada'});">almada@unisanahospitais.pt</a><br>
 
       <br><br>       

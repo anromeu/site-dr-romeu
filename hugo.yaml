@@ -49,7 +49,7 @@ params:
     url: "/images/logo.webp"
     alt: "Dr. José Carlos Romeu - Reumatologista"
     text: ""
-  description: "Especialista em Reumatologia e Saúde Óssea. Tratamento de Osteoporose e Artrite em Lisboa, Setúbal, Almada, Azeitão e Quinta do Conde. Marque a sua consulta."
+  description: "Especialista em Reumatologia. Tratamento de Osteoporose e Artrite em Lisboa, Setúbal, Almada, Azeitão e Quinta do Conde. Marque a sua consulta."
   keywords: "reumatologia, reumatologista lisboa, osteoporose, lúpus, saúde óssea, reumatologista setúbal, reumatologista quinta do conde, reumatologista azeitão, reumatologista almada, médico ossos, José Carlos Romeu"
   images: ["images/og-card.webp"]
   favicon: "images/fav1.webp"
@@ -96,7 +96,7 @@ params:
     intro: ""
     title: "Dr. José Carlos Romeu"
     subtitle: "Médico Reumatologista"
-    content: "Com mais de 40 anos de experiência clínica, dedicado à prevenção e ao diagnóstico e tratamento de doenças reumáticas e ósseas metabólicas. Consultas especializadas de Reumatologia em Lisboa, Setúbal, Almada, Azeitão e Quinta do Conde."
+    content: "Com mais de 40 anos de experiência clínica, dedicado à prevenção e ao diagnóstico e tratamento de doenças reumáticas e ósseas metabólicas. Consultas de Reumatologia em Lisboa, Setúbal, Almada, Azeitão e Quinta do Conde."
     image: "images/jcr.webp"
     roundImage: true 
     bottomImage:
@@ -200,7 +200,7 @@ params:
     content: |-
       ### LISBOA
       **Clínica Dr. Passos Ângelo**<br>
-      Morada: <a href="https://maps.app.goo.gl/Zh5PEAGeyPP3vnsB9" target="_blank" rel="noopener" style="text-decoration: underline;">Av. da Liberdade, 11, 1° Andar, 1250-214 Lisboa</a><br>
+      Morada: <a href="https://maps.app.goo.gl/Zh5PEAGeyPP3vnsB9" target="_blank" rel="noopener" style="text-decoration: underline;">Av. da Liberdade, 11, 1° Andar, 1250-139 Lisboa</a><br>
       Telefones: <a href="tel:+351213219830" onclick="gtag('event', 'click_phone', {'location': 'Lisboa'});">213 219 830</a> ou <a href="tel:+351960282580" onclick="gtag('event', 'click_phone', {'location': 'Lisboa'});">960 282 580</a><br>
       E-mail: <a href="mailto:marcacoesclinicapassosangelo@gmail.com" onclick="gtag('event', 'click_email', {'location': 'Lisboa'});">marcacoesclinicapassosangelo@gmail.com</a><br>
       
@@ -214,7 +214,7 @@ params:
       ### SETÚBAL
       **Consultório Dr. José Carlos Romeu**
       <span style="font-size: 1.05rem; font-weight: 700; display: block; margin-top: -10px; margin-bottom: 0px;">Associação de Socorros Mútuos Setubalense</span><br>
-      Morada: <a href="https://maps.app.goo.gl/5SjpewtL2eAfDpFB9" target="_blank" rel="noopener" style="text-decoration: underline;">Rua Major Afonso Pala, 63-67, 2900-199 Setúbal</a><br>
+      Morada: <a href="https://maps.app.goo.gl/5SjpewtL2eAfDpFB9" target="_blank" rel="noopener" style="text-decoration: underline;">R. Major Afonso Pala, 63-67, 2900-199 Setúbal</a><br>
       Telefones: <a href="tel:+351265522226" onclick="gtag('event', 'click_phone', {'location': 'Setubal'});">265 522 226</a> ou <a href="tel:+351918574697" onclick="gtag('event', 'click_phone', {'location': 'Setubal'});">918 574 697</a><br>
       E-mail: <a href="mailto:secretaria@socorrosmutuos.pt" onclick="gtag('event', 'click_email', {'location': 'Setubal'});">secretaria@socorrosmutuos.pt</a><br>
       
@@ -228,7 +228,7 @@ params:
       ### ALMADA
       **Hospital Particular de Almada**
       <span style="font-size: 1.05rem; font-weight: 500; display: block; margin-top: -10px; margin-bottom: 0px;">Unisana Hospitais</span><br>
-      Morada: <a href="https://maps.app.goo.gl/bAGaRMtA9uWWdwqo9" target="_blank" rel="noopener" style="text-decoration: underline;">Rua Manuel Febrero 85, 2805-192 Almada</a><br>
+      Morada: <a href="https://maps.app.goo.gl/bAGaRMtA9uWWdwqo9" target="_blank" rel="noopener" style="text-decoration: underline;">R. Manuel Febrero 85, 2805-192 Almada</a><br>
       Telefone: <a href="tel:+351212723680" onclick="gtag('event', 'click_phone', {'location': 'Almada'});">212 723 680</a><br>
       E-mail: <a href="mailto:almada@unisanahospitais.pt" onclick="gtag('event', 'click_email', {'location': 'Almada'});">almada@unisanahospitais.pt</a><br>
 
@@ -236,7 +236,7 @@ params:
 
       ### AZEITÃO
       **Santa Casa da Misericórdia de Azeitão**<br>
-      Morada: <a href="https://maps.app.goo.gl/frVitkJvLdBHVrzXA" target="_blank" rel="noopener" style="text-decoration: underline;">Rua José Augusto Coelho 154, 2925-539 Azeitão</a><br>
+      Morada: <a href="https://maps.app.goo.gl/frVitkJvLdBHVrzXA" target="_blank" rel="noopener" style="text-decoration: underline;">R. José Augusto Coelho 154, 2925-539 Azeitão</a><br>
       Telefones: <a href="tel:+351212198900" onclick="gtag('event', 'click_phone', {'location': 'Azeitao'});">212 198 900</a> ou <a href="tel:+351963672016" onclick="gtag('event', 'click_phone', {'location': 'Azeitao'});">963 672 016</a><br>
       E-mail: <a href="mailto:geral@scmazeitao.pt" onclick="gtag('event', 'click_email', {'location': 'Azeitao'});">geral@scmazeitao.pt</a> ou <a href="mailto:rececao@scmazeitao.pt" onclick="gtag('event', 'click_email', {'location': 'Azeitao'});">rececao@scmazeitao.pt</a><br>
       
